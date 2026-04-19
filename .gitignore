@@ -17,6 +17,7 @@ create_lote_test_*
 create_lote_without_upload*
 upload_test_response.json
 fact_exchange_latest.json
+especificacion_codex_automatizacion_iva_crowdfarming_factulotes.md
 
 .idea/
 .vscode/
