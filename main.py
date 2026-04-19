@@ -900,20 +900,14 @@ def ensure_runtime_config(args: argparse.Namespace, settings: Settings) -> Setti
         updated_settings = replace(
             updated_settings,
             farmeneur_email=auth_result.email,
-            farmeneur_token=auth_result.farmeneur_token,
             crowdfarming_token=auth_result.farmerzone_token,
             factulotes_token=auth_result.factulotes_token,
             farmer_id=auth_result.farmer_id,
-            farmeneur_device_id=auth_result.device_id,
-            farmeneur_session_id=auth_result.session_id,
         )
         env_updates["FARMENEUR_EMAIL"] = auth_result.email
-        env_updates["FARMENEUR_TOKEN"] = auth_result.farmeneur_token
         env_updates["CROWDFARMING_TOKEN"] = auth_result.farmerzone_token
         env_updates["FACTULOTES_TOKEN"] = auth_result.factulotes_token
         env_updates["FARMER_ID"] = auth_result.farmer_id
-        env_updates["FARMENEUR_DEVICE_ID"] = auth_result.device_id
-        env_updates["FARMENEUR_SESSION_ID"] = auth_result.session_id
 
     if args.write_env and env_updates:
         write_env_values(Path(args.env_file), env_updates)
@@ -1231,20 +1225,14 @@ def ensure_factulotes_runtime_config(args: argparse.Namespace, settings: Setting
     updated_settings = replace(
         updated_settings,
         farmeneur_email=auth_result.email,
-        farmeneur_token=auth_result.farmeneur_token,
         crowdfarming_token=auth_result.farmerzone_token,
         factulotes_token=auth_result.factulotes_token,
         farmer_id=auth_result.farmer_id,
-        farmeneur_device_id=auth_result.device_id,
-        farmeneur_session_id=auth_result.session_id,
     )
     env_updates["FARMENEUR_EMAIL"] = auth_result.email
-    env_updates["FARMENEUR_TOKEN"] = auth_result.farmeneur_token
     env_updates["CROWDFARMING_TOKEN"] = auth_result.farmerzone_token
     env_updates["FACTULOTES_TOKEN"] = auth_result.factulotes_token
     env_updates["FARMER_ID"] = auth_result.farmer_id
-    env_updates["FARMENEUR_DEVICE_ID"] = auth_result.device_id
-    env_updates["FARMENEUR_SESSION_ID"] = auth_result.session_id
 
     if args.write_env and env_updates:
         write_env_values(Path(args.env_file), env_updates)

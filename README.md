@@ -47,7 +47,6 @@ cp .env.example .env
 Variables principales:
 
 - `FARMENEUR_EMAIL`
-- `FARMENEUR_TOKEN`
 - `CROWDFARMING_TOKEN`
 - `FACTULOTES_TOKEN`
 - `FARMER_ID`
