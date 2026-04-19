@@ -115,3 +115,11 @@ El script deja sus artefactos en `TMP_DIR`:
 - `contador` en FactuLotes es el ID del contador configurado, no un número consecutivo manual.
 - El nombre del lote debe ser único. El script añade un identificador corto por ejecución para evitar errores de lote duplicado.
 - Los artefactos locales (`.env`, `tmp/`, respuestas de pruebas, etc.) están excluidos del repo.
+
+## Licencia
+
+Este repositorio está publicado bajo `PolyForm Noncommercial 1.0.0`.
+
+- Se permite usar, copiar y modificar el código para fines no comerciales.
+- El uso comercial no está permitido sin permiso previo del autor.
+- Consulta [LICENSE](LICENSE) para el texto completo.
